@@ -1,0 +1,59 @@
+extend ../Template/template
+
+block vars
+	- var pagina = { name: 'consumo', fin: 'gasto'}
+	- var menuPrincipal = true
+block content
+	h3 Ahora queremos saber datos acerca de tus consumos
+
+
+	form(action="").form__consumo
+
+		.si-no
+			span SI
+			span NO
+
+		.form__group
+			span Electricidad
+			label
+				input(type="radio" value="si" class="electicidad")
+				input(type="radio" value="no" class="electicidad")
+
+		.form__group
+			span Gas Lp
+			label
+				input(type="radio" value="si" name="lp")
+				input(type="radio" value="no" name="lp")
+
+
+		.form__group
+			span Gas Natural
+			label
+				input(type="radio" value="si" name="gas")
+				input(type="radio" value="no" name="gas")
+
+		.form__group
+			span Vehículo
+			label
+				input(type="radio" value="si" name="vehiculo")
+				input(type="radio" value="no" name="vehiculo")
+	
+		.form__group
+			span Vuelas + 5 veces al año
+			label
+				input(type="radio" value="si" name="vuelas")
+				input(type="radio" value="no" name="vuelas")
+
+
+		.form__group
+			span Usas Transporte público
+			label
+				input(type="radio" value="si" name="transporte")
+				input(type="radio" value="no" name="transporte")
+		
+		.form__group
+			span ¿Separas la basura?
+			label
+				input(type="radio" value="si" name="basura")
+				input(type="radio" value="no" name="basura")
+					

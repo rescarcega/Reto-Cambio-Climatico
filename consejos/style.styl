@@ -1,0 +1,43 @@
+.mensaje 
+	max-width 300px
+
+.consejos
+
+	&__item
+		margin .5rem
+		max-width 300px
+		padding .2rem .5rem
+		border-radius 25px
+		color #333
+		background-color yellow
+		position relative
+		p
+			position relative
+			z-index 5
+		&.amarillo
+			&:before
+				position absolute
+				bottom 6px
+				right -32px
+				content ''
+				width 52px
+				display block
+				height 52px
+				border-radius 50%
+				box-shadow 15px 15px 0 0 yellow
+				transform rotate(111deg)
+
+		&.azul
+			background-color #C6F2FF
+			z-index 2
+			&:before
+				position absolute
+				bottom -6px
+				left -37px
+				content ''
+				width 52px
+				display block
+				height 52px
+				border-radius 50%
+				box-shadow 15px 15px 0 0 #C6F2FF
+				transform rotate(-35deg)

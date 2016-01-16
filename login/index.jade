@@ -1,0 +1,19 @@
+extend ../Template/template
+
+block vars
+	- pagina = { name: 'login'}
+	- menu = false
+	- logo  = true
+	- inicio = true
+
+block content
+	form(action="").form__login
+		.form__group
+			input(type="text" placeholder="EMAIL" required)
+		.form__group
+			input(type="password" placeholder="PASSWORD" required)
+		a.btn__entrar(href="gasto.html") ENTRAR
+
+	.signup
+		a(href="formulario.html") Regístrate
+		a(href="formulario.html") Olvidé mi contraseña

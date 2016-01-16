@@ -1,0 +1,27 @@
+.reduccion__content
+	h3
+		position relative
+		&::after
+			position absolute
+			content ''
+			width 1.5rem
+			height 1.5rem
+			top -.3rem
+			left -2rem
+			border-radius 50%
+			background-color green
+
+.reduccion__table
+
+	&--item
+		text-align center
+		display inline-block
+		vertical-align middle
+		max-width 49%
+		
+		&:first-child
+			margin-right 2rem
+	
+		select
+			padding .5rem
+			color #333

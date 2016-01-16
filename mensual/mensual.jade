@@ -1,0 +1,93 @@
+extend ../Template/template
+
+block vars
+	- var pagina = { name: 'mensual'}
+	-  menuRedes = true
+	- menuPrincipal = true
+	- logo = false
+block content
+
+	ul.tab__menu
+		li
+			a(href="#mensual")
+		li
+			a(href="#indicador")
+		li
+			a(href="#analisis")
+	
+	.tabs
+		h3 Consumo Mensual en $
+
+		#mensual.tab.active
+			ul.consumo__list
+					li
+						span.fa.fa-lightbulb-o
+					li
+						span.fa.fa-battery-full
+					li
+						span.fa.fa-bus
+					li
+						span.fa.fa-trash
+			
+			.consumo__tabla
+				.consumo__tabla--item
+					span.fa.fa-lightbulb-o $ 480
+				.consumo__tabla--item
+					span.fa.fa-battery-full $ 480
+				.consumo__tabla--item
+					span.fa.fa-bus $ 480
+				.consumo__tabla--item
+					span.fa.fa-trash no separa
+						i.fa.fa-frown-o
+
+				.consumo__total
+					span tu consumo en $ = 000,000
+					br
+					span.doble Tu Ahorro en $ = $000,00
+
+		#indicador.tab
+
+			figure
+				img(src="images/indicador.png", alt="Indicador")
+
+			.indicador__table
+				.indicador__table--item
+					span.rojo
+						p Mi consumo
+					span
+						p 90%
+				.clearfix
+
+				.indicador__table--item
+					span.verde
+						p Consumo Población
+					span
+						p 102%
+				.clearfix
+
+				.indicador__table--item
+					span
+						p Referencia Nacional
+					span
+						p 100%
+						
+
+		#analisis.tab
+
+			figure.mapa
+			.reduccion__content
+
+				h3 Gasolina reducción del 2,1 %
+
+				.reduccion__table
+					.reduccion__table--item
+						p Análisis
+					.reduccion__table--item
+						select
+							option(value="") personal
+							option(value="") Familiar
+							option(value="") Local
+							option(value="") Global
+
+
+

@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+html(lang="es")
+	block vars
+	head
+		meta(charset="UTF-8")
+		meta(name="viewport" content="initial-scale=1")
+		title Login Semarnat
+
+		link(rel="stylesheet", href="css/style.css")
+		link(rel="stylesheet", href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css")
+		link(rel="stylesheet", href="https://fonts.googleapis.com/css?family=Roboto:400,500,300")
+	body(class="#{pagina.name}")
+
+		.content
+			.main__content
+				block logo
+
+					if logo == true
+						figure.logo
+							a(href="index.html")
+								img(src="images/logotipo.png", alt="Stop Co2" width="150")
+					else
+						figure.logo__flotado
+							a(href="index.html")
+								img(src="images/logotipo.png", alt="Stop Co2" width="80")
+				block content
+				
+				if pagina.next || pagina.prev || pagina.fin
+					.botonera
+						if pagina.prev
+							a(href="#{pagina.prev}.html").btn.btn__siguiente Anterior
+						if pagina.next
+							a(href="#{pagina.next}.html").btn.btn__siguiente Siguiente
+						if pagina.fin
+							a(href="#{pagina.fin}.html").btn.btn__siguiente Ok
+
+			footer.footer
+
+				if inicio
+					figure.semarnat
+						img(src="images/semarnat.jpg", alt="semarnat")
+
+				if menuRedes
+					ul.iconos__cellphone
+						li
+							a(href="")
+								img(src="images/menu/icono-msn.png", alt="")
+						li
+							a(href="")
+								img(src="images/menu/icono-mail.png", alt="")
+						li
+							a(href="")
+								img(src="images/menu/icono-twitter.png", alt="")
+						li
+							a(href="")
+								img(src="images/menu/icono-facebook.png", alt="")
+						li
+							a(href="")
+								img(src="images/menu/icono-stop.png", alt="")
+				if menuPrincipal
+
+					ul.iconos__menu
+						li
+							if pagina.name == "formulario"
+								a.active(href="formulario.html")
+							else
+								a(href="formulario.html")
+
+						li
+							if pagina.name == "comparte"
+								a.active(href="comparte.html")
+							else
+								a(href="comparte.html")
+						li
+							if pagina.name == "gasto"
+								a.active(href="gasto.html")
+							else
+								a(href="gasto.html")
+						li
+							if pagina.name == "mensual"
+								a.active(href="mensual.html")
+							else
+								a(href="mensual.html")
+						li
+							if pagina.name == "emisiones"
+								a.active(href="emisiones.html")
+							else
+								a(href="emisiones.html")
+						li
+							if pagina.name == "mensajes"
+								a.active(href="mensajes.html")
+							else
+								a(href="mensajes.html")
+						li
+							if pagina.name == "consejos"
+								a.active(href="consejos.html")
+							else
+								a(href="consejos.html")
+		
+		script(src="js/script.js" type="text/javascript")
+		

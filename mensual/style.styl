@@ -1,0 +1,212 @@
+#analisis
+	.mapa
+		width 125%
+		background-color red
+		height 220px
+		margin-left -32px
+		background url('../images/mapa.png') no-repeat center
+		-webkit-background-size cover
+		background-size cover
+.mensual
+
+	.logo__flotado
+		img
+			opacity 0
+	.content
+		width 80%
+		
+
+	
+	.consumo__list
+		margin 1rem 0
+		background url('../images/lineas.png') no-repeat center
+		background-size 100%
+		li
+			display inline-block
+			vertical-align bottom
+			margin 0 1rem
+			padding .5rem
+			position relative
+			width 2rem
+			-webkit-box-shadow: -5px -5px 0 5px inherit
+			box-shadow: -5px -5px 0 5px inherit
+
+			span
+				position absolute
+				bottom .5rem
+				left .5rem
+				font-size 1.2rem
+			
+			i
+				content ''
+				position absolute
+				width 100%
+				height 1px
+				left 0
+				background-color #fff
+			
+			&:first-child
+				background-color green
+				height 40px
+				-webkit-box-shadow: -14px 3px 0 -3px rgba(118, 218, 8, 0.65)
+				box-shadow: -14px 3px 0 -3px rgba(118, 218, 8, 0.65)
+
+			&:nth-child(2)
+				height 50px
+				background-color yellow
+				-webkit-box-shadow: -5px -5px 0 5px inherit
+				box-shadow: -5px -5px 0 5px inherit
+				-webkit-box-shadow: -6px -5px 0 6px rgba(251, 232, 2, 0.65)
+				box-shadow: -6px -5px 0 6px rgba(251, 232, 2, 0.65)
+
+
+
+			&:nth-child(3)
+				background-color blue
+				height 100px
+				-webkit-box-shadow: -5px -5px 0 5px inherit
+				box-shadow: -5px -5px 0 5px inherit
+				-webkit-box-shadow: -6px -5px 0 5px rgba(8, 73, 218, 0.65)
+				box-shadow: -6px -5px 0 5px rgba(8, 73, 218, 0.65)
+
+
+			&:nth-child(4)
+				height 5px
+				background-color #FF00BA
+
+	.consumo__total
+		margin-top 2rem
+		text-align center
+		.doble
+			font-size 1.2rem
+	.consumo__tabla
+		margin-top 1rem
+		
+		.fa-frown-o
+			font-size 1.5rem
+			&::before
+				margin-left .5rem
+				color #FF00BA
+	
+		
+		&--item
+			display inline-block
+			vertical-align middle
+			width 49%
+			margin-bottom 1rem
+			span
+				&::before
+					margin-right .5rem
+					font-size 1.5rem
+			&:first-child
+				span
+					&::before
+						color green
+			&:nth-child(2)
+				span
+					&::before
+						color yellow
+			&:nth-child(3)
+				span
+					&::before
+						color blue
+			&:nth-child(4)
+				span
+					&::before
+						color #FF00BA
+	
+	.tab
+		&__menu
+			position absolute
+			top 2rem
+			right 2rem
+			li
+				display inline-block
+				vertical-align bottom	
+				margin 1rem .5rem
+				height 30px
+				width 30px
+				
+				a
+					display block
+					width 100%
+					height 100%
+					background-repeat no-repeat
+					background-position top center
+				&:hover
+					a
+						background-position bottom center
+			
+				&:first-child
+					a
+						background-image url('../images/menu-app/tabs/icono-chart.png')
+
+				&:nth-child(2)
+					a
+						background-image url('../images/menu-app/tabs/icono-odometro.png')
+	
+				&:last-child
+					a
+						background-image url('../images/menu-app/tabs/icono-mapa.png')
+
+
+
+
+/*=================*\
+    * Indicador *
+\*=================*/
+
+.indicador__table--item
+	position relative
+	span
+		position relative
+		&:first-child
+			float left
+			padding-right 1rem
+		&:last-child
+			float right
+		
+		&::after
+			position absolute
+			content ''
+			width 1.5rem
+			height 1.5rem
+			top .8rem
+			left -2rem
+			border-radius 50%
+		&.rojo
+			&::after
+				background-color red
+		&.verde
+			&::after
+				background-color green
+
+
+/*=================*\
+    * Análisis *
+\*=================*/
+.reduccion__table
+	text-align center
+
+.reduccion__content
+	h3
+		position relative
+		&::after
+			position absolute
+			content ''
+			width 1.5rem
+			height 1.5rem
+			top -.3rem
+			left -2rem
+			border-radius 50%
+			background-color green
+
+/*=================*\
+    * Tabs *
+\*=================*/
+
+.tab
+	display none
+	
+	&.active
+		display block

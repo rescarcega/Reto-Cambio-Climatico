@@ -1,0 +1,24 @@
+extend ../Template/template
+
+block vars
+	- var pagina = { name: 'analisis', prev: 'indicador', next: 'emisiones'}
+
+block content
+
+	figure
+		img(src="images/mapa.png", alt="Mapa")
+	.reduccion__content
+
+		h3 Gasolina reducción del 2,1 %
+
+		.reduccion__table
+			.reduccion__table--item
+				p Análisis
+			.reduccion__table--item
+				select
+					option(value="") personal
+					option(value="") Familiar
+					option(value="") Local
+					option(value="") Global
+
+

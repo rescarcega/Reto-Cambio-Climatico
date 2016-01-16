@@ -1,0 +1,30 @@
+extend ../Template/template
+
+block vars
+	- var pagina = { name: 'emisiones'}
+	- menuPrincipal = true
+	- menuRedes = true
+
+
+block content
+	h3 TU IMPACTO
+
+	.impacto__menu
+		ul
+			li.active
+				a(href="#20") En 20 Años
+			li
+				a(href="#100") En 100 Años
+
+	.impacto__content
+
+		
+			#20.mensaje__emision.active
+				.emision__info
+					p Tus emisiones de CO2 son muy altas; en 20 años tus hijos ya no podrán cononcer al oso polar
+				img(src="images/oso.jpg", alt="Oso polar")
+		
+			#100.mensaje__emision
+				.emision__info
+					p Tus emisiones de CO2 son muy altas; en 100 años el clima será extremo y los polos se habrán derretido por completo
+				img(src="images/desastre.jpg", alt="Desastre natural")

@@ -1,0 +1,27 @@
+extend ../Template/template
+
+block vars
+	- var pagina = { name: 'gasto'}
+	- menuPrincipal = true
+
+block content
+
+	p Registra tu consumo
+
+	p Fecha
+	input(type="date")
+
+	p Tipo de consumo
+	form(action="")
+		.gasto__table
+			select(name="" multiple)
+				option(value="") Gas 
+				option(value="") Gasolina
+				option(value="") Electricidad
+
+		.form___group.input__gasto
+			label Gasto $
+				input(type="text")
+				input(type="submit" value="registrar")
+
+		a(href="mensajes.html").terminar Terminar

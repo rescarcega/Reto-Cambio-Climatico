@@ -1,0 +1,67 @@
+.users
+	position relative
+	min-height 300px
+	width 100%
+	max-width 300px
+	&__item
+		border-radius 50%
+		overflow hidden
+		border 3px solid #fff
+		position absolute
+		
+		&::after
+			content '-1%'
+			position absolute
+			width 100%
+			height 100%
+			background-color rgba(30,30,30,.5)
+			color #fff
+			top 0
+			left 0
+			text-align center
+			font-size 2rem
+			display none
+		&:hover
+			&::after
+				display block
+			
+		
+		&--1
+			top 0
+			left 0
+			max-width 80px
+			&::after
+				padding-top 1rem
+		
+		&--2
+			top 2rem
+			left 6rem
+			max-width 120px
+			&::after
+				padding-top 2.5rem
+		
+		&--3
+			right 0
+			top 0
+			max-width 60px
+			&::after
+				padding-top .5rem
+		
+		&--4
+			left 2rem
+			top 5.5rem
+			max-width 60px
+			&::after
+				padding-top .5rem		
+		&--5
+			left 0
+			bottom 0
+			&::after
+				padding-top 3rem		
+		&--6
+			right 1rem
+			bottom 1rem
+			max-width 100px
+			&::after
+				padding-top 2rem			
+			

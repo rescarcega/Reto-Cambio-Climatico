@@ -1,0 +1,22 @@
+extend ../Template/template
+block vars
+	- logo = true
+	- pagina = { name: 'mensajes', fin: 'mensual'}
+	- menuPrincipal = true
+
+block content
+
+	span.fechita jue, 8 oct
+
+	.mensaje
+		p Gracias por tu último registro de consumo de electricidad
+
+		i 9:30
+
+	span.fechita HOY
+
+	.mensaje
+		p ¡Hola! No has registrado tu consumo de gasolina en las últimas 2 semanas. No olvides hacerlo porque te ayuda a programar tus futuros pagos.
+
+		i 12:30
+

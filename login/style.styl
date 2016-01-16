@@ -1,0 +1,76 @@
+.form__login
+	input
+		padding .5rem
+		margin 1rem 0
+		display block
+		padding .5rem .5rem .5rem 2rem
+		width 100%
+		border 0
+		position relative
+		height 50px
+
+	.form__group
+		position relative
+		
+		&:first-child
+			&::before
+				content '\f007'
+		&:nth-child(2)
+			&::before
+				content '\f023'	
+
+		&::before
+			text-shadow none
+			font-family FontAwesome
+			display inline-block
+			margin-right 1rem
+			position absolute
+			left .5rem
+			top 1rem
+			color #ccc
+			z-index 2
+
+
+.signup
+	margin 2rem auto
+	text-align center
+	a
+		text-transform uppercase
+		display inline-block
+		vertical-align top
+		max-width 50%
+
+		&:first-child
+			margin-right 2rem
+			
+
+	
+.btn__entrar
+	background-color #ffffff
+	color #ccc!important
+	display block
+	width 100%
+	height 50px
+	padding 1rem .5rem
+	text-align left
+	position relative
+	text-shadow none
+	position relative
+	text-decoration none
+	
+	&:hover
+		background-color #08ACE1
+		color #fff
+
+	&::after
+		content '\f0c2'
+		text-shadow none
+		font-family FontAwesome
+		display inline-block
+		position absolute
+		border-left solid 1px #ccc
+		padding-left .5rem
+		right .5rem
+		top 1rem
+		color #ccc
+		z-index 2

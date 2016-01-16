@@ -1,0 +1,288 @@
+*
+	-webkit-box-sizing border-box
+	-moz-box-sizing border-box
+	box-sizing border-box
+
+
+
+
+
+
+
+/*===============*\
+    * Base *
+\*===============*/
+
+@import '../components/css/normalize'
+
+
+
+/*==========================*\
+    * Estilos Template *
+\*==========================*/
+
+html
+	height 100%
+
+body
+	background rgb(135,224,253)
+	background -moz-linear-gradient(45deg,  rgba(135,224,253,1) 0%, rgba(83,203,241,1) 40%, rgba(5,171,224,1) 100%)
+	background -webkit-linear-gradient(45deg,  rgba(135,224,253,1) 0%,rgba(83,203,241,1) 40%,rgba(5,171,224,1) 100%)
+	background linear-gradient(45deg,  rgba(135,224,253,1) 0%,rgba(83,203,241,1) 40%,rgba(5,171,224,1) 100%)
+
+	min-height 100%
+	-webkit-background-size cover
+	background-size cover
+	position relative
+	
+	font-family 'Roboto', sans-serif
+	text-shadow 0 0 1px #000
+
+figure
+	margin 0
+
+ul
+	list-style-type none
+	padding 0
+	margin 0
+a
+	color #fff
+
+img
+	max-width 100%
+
+.logo
+	img
+		display block
+		margin 1rem auto
+	
+	&__flotado
+		text-align right
+		margin 1rem 0
+
+.content
+	width 90%
+	margin 0 auto
+	min-height 100vh
+	display -webkit-flex
+	display -moz-flex
+	display -ms-flex
+	display -o-flex
+	-webkit-display flex
+	-moz-display flex
+	-ms-display flex
+	-o-display flex
+	display flex
+	
+	color #fff
+	
+	-webkit-justify-content center
+	-moz-justify-content center
+	-ms-justify-content center
+	-o-justify-content center
+	justify-content center
+
+	-ms-align-items center
+	align-items center
+
+	-webkit-flex-direction column
+	-moz-flex-direction column
+	-ms-flex-direction column
+	-o-flex-direction column
+	flex-direction column
+
+
+	form
+		input,
+		select,
+		option
+			color #333
+
+figure
+	text-align center
+
+.main__content
+	flex 1
+	width 100%
+
+.footer
+	width 100%
+	position relative
+	ul
+		list-style-type none
+		padding 0
+		margin 0
+		text-align center
+		width 100%
+		li
+			display inline-block
+			vertical-align middle
+			width 30px
+			margin .2rem
+			height 30px
+			overflow hidden
+
+
+
+.btn
+
+	display inline-block
+	padding .5rem
+	margin 1rem .5rem 0 .5rem
+	max-width 100%
+	&__siguiente
+		background-color yellow
+		border-radius 5px
+		color #333
+
+
+h3
+	font-weight 300
+	line-height 1.5rem
+	text-align center
+	margin 0 0 .7rem 0
+
+h2
+	margin 0
+	margin-bottom .5rem
+
+/*===============*\
+    * Fondos *
+\*===============*/
+
+body
+	&.formulario
+		background url('../images/fondos/montana.jpeg') no-repeat center fixed
+		-webkit-background-size cover
+		background-size cover
+
+	&.analisis
+		background url('../images/fondos/detail.jpeg') no-repeat center fixed
+		-webkit-background-size cover
+		background-size cover
+
+	&.comparte
+		background url('../images/fondos/detail.jpeg') no-repeat center fixed
+		-webkit-background-size cover
+		background-size cover
+
+	&.consejos
+		background url('../images/fondos/fondo.jpg') no-repeat center fixed
+		-webkit-background-size cover
+		background-size cover
+
+	&.consumo
+		background url('../images/fondos/montana.jpeg') no-repeat center fixed
+		-webkit-background-size cover
+		background-size cover
+
+	&.emisiones
+		background url('../images/fondos/detail.jpeg') no-repeat center fixed
+		-webkit-background-size cover
+		background-size cover
+
+	&.gasto
+		background url('../images/fondos/pasto.jpeg') no-repeat center fixed
+		-webkit-background-size cover
+		background-size cover
+
+	&.indicador
+		background url('../images/fondos/detail.jpeg') no-repeat center fixed
+		-webkit-background-size cover
+		background-size cover
+
+	&.mensual
+		background url('../images/fondos/detail.jpeg') no-repeat center fixed
+		-webkit-background-size cover
+		background-size cover
+
+	&.reduccion
+		background url('../images/fondos/detail.jpeg') no-repeat center fixed
+		-webkit-background-size cover
+		background-size cover
+
+
+	&.mensajes
+		background url('../images/fondos/edificio.jpeg') no-repeat center fixed
+		-webkit-background-size cover
+		background-size cover
+
+.semarnat
+	img
+		width 100%
+
+.iconos__menu
+	background-color rgba(30,30,30,.5)
+	
+	li		
+		width 30px
+		height 30px
+		a
+			display block
+			width 100%
+			height 100%
+			background-repeat no-repeat
+			background-position top center
+			
+			&:hover,
+			&.active
+				background-position bottom center
+		&:first-child
+			a
+				background-image url('../images/menu-app/icono-settings.png')
+
+		&:nth-child(2)
+			a
+				background-image url('../images/menu-app/icono-compartir.png')
+		&:nth-child(3)
+			a
+				background-image url('..//images/menu-app/icono-pencil.png')
+
+		&:nth-child(4)
+			a
+				background-image url('..//images/menu-app/icono-smile.png')
+		&:nth-child(5)
+			a
+				background-image url('../images/menu-app/icono-chart.png')
+
+		&:nth-child(6)
+			a
+				background-image url('../images/menu-app/icono-mensajes.png')
+		&:last-child
+			a
+				background-image url('../images/menu-app/icon-ware.png')
+
+.botonera
+	text-align right
+
+.clearfix
+	clear both
+
+/*===============*\
+    * Login *
+\*===============*/
+
+@import '../login/style'
+
+@import '../mensajes/style'
+
+@import '../formulario/style'
+
+@import '../consumo/style'
+
+@import '../gasto/style'
+
+@import '../mensual/style'
+
+@import '../comparte/style'
+
+@import '../indicador/style'
+
+@import '../analisis/style'
+
+@import '../reduccion/style'
+
+@import '../consejos/style'
+
+@import '../emisiones/style'
+
