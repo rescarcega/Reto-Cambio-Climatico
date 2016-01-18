@@ -1,8 +1,8 @@
 ## RETO #CAMBIO CLIMATICO
 
 
-### Video de funcionamiento +  Plan de Trabajo y Cronograma
-LINK AL VIDEO
+### Video de funcionamiento 
+https://www.dropbox.com/s/rwhnmdvuj92sk46/StopCo2.mp4?dl=0
 
 ### TECNOLOGÍA
 
